@@ -7,7 +7,8 @@ The preprocess.py takes the input file which is named as rating.csv and generate
 The data in train.txt is used to train the model, while test.txt is used to test.
 
 PMF_train.py takes train.txt and generates two files named U_matrix.npy and V_matrix.npy which contain the U and V matrix.
-It will also generate a file named learning_curve.txt which contains the changes of the fit error of the model.
+It will also generate a file named learning_curve.txt which contains the changes of the distance between current model and
+our desired model.
 
 PMF_predict.py will take the two matrix files and test.txt file to predict the ratings according to test.txt.
 It will also generate a file named two_ratings.txt which contain the ground truth and the predicted ratings.
